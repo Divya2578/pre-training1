@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\bin\Debug\netcoreapp3.1\BuiltInType.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\bin\Debug\netcoreapp3.1\BuiltInType.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\bin\Debug\netcoreapp3.1\BuiltInType.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\bin\Debug\netcoreapp3.1\BuiltInType.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\bin\Debug\netcoreapp3.1\BuiltInType.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\bin\Debug\netcoreapp3.1\BuiltInType.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\BuiltInType\BuiltInType\obj\Debug\netcoreapp3.1\BuiltInType.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\bin\Debug\netcoreapp3.1\CommonOpe.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\bin\Debug\netcoreapp3.1\CommonOpe.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\bin\Debug\netcoreapp3.1\CommonOpe.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\bin\Debug\netcoreapp3.1\CommonOpe.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\bin\Debug\netcoreapp3.1\CommonOpe.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\bin\Debug\netcoreapp3.1\CommonOpe.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\obj\Debug\netcoreapp3.1\CommonOpe.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\obj\Debug\netcoreapp3.1\CommonOpe.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\obj\Debug\netcoreapp3.1\CommonOpe.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\obj\Debug\netcoreapp3.1\CommonOpe.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\obj\Debug\netcoreapp3.1\CommonOpe.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\CommonOpe\CommonOpe\obj\Debug\netcoreapp3.1\CommonOpe.genruntimeconfig.cache

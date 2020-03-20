@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\bin\Debug\netcoreapp3.1\StringType.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\bin\Debug\netcoreapp3.1\StringType.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\bin\Debug\netcoreapp3.1\StringType.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\bin\Debug\netcoreapp3.1\StringType.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\bin\Debug\netcoreapp3.1\StringType.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\bin\Debug\netcoreapp3.1\StringType.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\StringType\StringType\obj\Debug\netcoreapp3.1\StringType.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\bin\Debug\netcoreapp3.1\Ternary.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\bin\Debug\netcoreapp3.1\Ternary.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\bin\Debug\netcoreapp3.1\Ternary.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\bin\Debug\netcoreapp3.1\Ternary.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\bin\Debug\netcoreapp3.1\Ternary.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\bin\Debug\netcoreapp3.1\Ternary.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\obj\Debug\netcoreapp3.1\Ternary.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\obj\Debug\netcoreapp3.1\Ternary.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\obj\Debug\netcoreapp3.1\Ternary.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\obj\Debug\netcoreapp3.1\Ternary.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\obj\Debug\netcoreapp3.1\Ternary.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\Ternary\Ternary\obj\Debug\netcoreapp3.1\Ternary.genruntimeconfig.cache
