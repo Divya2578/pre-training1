@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\bin\Debug\netcoreapp3.1\MulticastDelegates.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\bin\Debug\netcoreapp3.1\MulticastDelegates.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\bin\Debug\netcoreapp3.1\MulticastDelegates.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\bin\Debug\netcoreapp3.1\MulticastDelegates.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\bin\Debug\netcoreapp3.1\MulticastDelegates.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\bin\Debug\netcoreapp3.1\MulticastDelegates.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\MulticastDelegates\MulticastDelegates\obj\Debug\netcoreapp3.1\MulticastDelegates.genruntimeconfig.cache

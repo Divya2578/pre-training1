@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\bin\Debug\netcoreapp3.1\NullType.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\bin\Debug\netcoreapp3.1\NullType.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\bin\Debug\netcoreapp3.1\NullType.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\bin\Debug\netcoreapp3.1\NullType.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\bin\Debug\netcoreapp3.1\NullType.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\bin\Debug\netcoreapp3.1\NullType.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\obj\Debug\netcoreapp3.1\NullType.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\obj\Debug\netcoreapp3.1\NullType.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\obj\Debug\netcoreapp3.1\NullType.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\obj\Debug\netcoreapp3.1\NullType.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\obj\Debug\netcoreapp3.1\NullType.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\NullType\NullType\obj\Debug\netcoreapp3.1\NullType.genruntimeconfig.cache

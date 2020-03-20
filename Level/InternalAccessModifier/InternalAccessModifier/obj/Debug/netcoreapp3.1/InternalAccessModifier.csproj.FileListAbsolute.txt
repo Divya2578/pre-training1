@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\bin\Debug\netcoreapp3.1\InternalAccessModifier.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\bin\Debug\netcoreapp3.1\InternalAccessModifier.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\bin\Debug\netcoreapp3.1\InternalAccessModifier.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\bin\Debug\netcoreapp3.1\InternalAccessModifier.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\bin\Debug\netcoreapp3.1\InternalAccessModifier.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\bin\Debug\netcoreapp3.1\InternalAccessModifier.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\InternalAccessModifier\InternalAccessModifier\obj\Debug\netcoreapp3.1\InternalAccessModifier.genruntimeconfig.cache

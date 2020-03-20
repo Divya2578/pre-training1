@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\bin\Debug\netcoreapp3.1\PrivateAccessModifier.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\bin\Debug\netcoreapp3.1\PrivateAccessModifier.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\bin\Debug\netcoreapp3.1\PrivateAccessModifier.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\bin\Debug\netcoreapp3.1\PrivateAccessModifier.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\bin\Debug\netcoreapp3.1\PrivateAccessModifier.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\bin\Debug\netcoreapp3.1\PrivateAccessModifier.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\PrivateAccessModifier\PrivateAccessModifier\obj\Debug\netcoreapp3.1\PrivateAccessModifier.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\bin\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\bin\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\bin\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\bin\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\bin\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\bin\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\obj\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\obj\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\obj\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\obj\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\obj\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\ProtectedInternalAccessModifier\ProtectedInternalAccessModifier\obj\Debug\netcoreapp3.1\ProtectedInternalAccessModifier.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\bin\Debug\netcoreapp3.1\ConstructureAndDestructor.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\bin\Debug\netcoreapp3.1\ConstructureAndDestructor.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\bin\Debug\netcoreapp3.1\ConstructureAndDestructor.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\bin\Debug\netcoreapp3.1\ConstructureAndDestructor.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\bin\Debug\netcoreapp3.1\ConstructureAndDestructor.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\bin\Debug\netcoreapp3.1\ConstructureAndDestructor.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\obj\Debug\netcoreapp3.1\ConstructureAndDestructor.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\obj\Debug\netcoreapp3.1\ConstructureAndDestructor.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\obj\Debug\netcoreapp3.1\ConstructureAndDestructor.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\obj\Debug\netcoreapp3.1\ConstructureAndDestructor.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\obj\Debug\netcoreapp3.1\ConstructureAndDestructor.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\ConstructureAndDestructor\ConstructureAndDestructor\obj\Debug\netcoreapp3.1\ConstructureAndDestructor.genruntimeconfig.cache

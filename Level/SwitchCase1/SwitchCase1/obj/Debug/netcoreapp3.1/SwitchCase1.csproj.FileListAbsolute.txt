@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\bin\Debug\netcoreapp3.1\SwitchCase1.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\bin\Debug\netcoreapp3.1\SwitchCase1.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\bin\Debug\netcoreapp3.1\SwitchCase1.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\bin\Debug\netcoreapp3.1\SwitchCase1.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\bin\Debug\netcoreapp3.1\SwitchCase1.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\bin\Debug\netcoreapp3.1\SwitchCase1.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\SwitchCase1\SwitchCase1\obj\Debug\netcoreapp3.1\SwitchCase1.genruntimeconfig.cache

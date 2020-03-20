@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\bin\Debug\netcoreapp3.1\ObjectAndClass.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\bin\Debug\netcoreapp3.1\ObjectAndClass.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\bin\Debug\netcoreapp3.1\ObjectAndClass.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\bin\Debug\netcoreapp3.1\ObjectAndClass.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\bin\Debug\netcoreapp3.1\ObjectAndClass.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\bin\Debug\netcoreapp3.1\ObjectAndClass.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\ObjectAndClass\ObjectAndClass\obj\Debug\netcoreapp3.1\ObjectAndClass.genruntimeconfig.cache

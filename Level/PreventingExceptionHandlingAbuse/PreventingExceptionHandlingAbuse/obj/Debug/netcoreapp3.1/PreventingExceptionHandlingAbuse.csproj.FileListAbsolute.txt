@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\bin\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\bin\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\bin\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\bin\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\bin\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\bin\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\obj\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\obj\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\obj\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\obj\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\obj\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\PreventingExceptionHandlingAbuse\PreventingExceptionHandlingAbuse\obj\Debug\netcoreapp3.1\PreventingExceptionHandlingAbuse.genruntimeconfig.cache

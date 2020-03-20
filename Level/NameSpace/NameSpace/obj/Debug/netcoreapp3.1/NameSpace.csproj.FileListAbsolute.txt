@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\bin\Debug\netcoreapp3.1\NameSpace.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\bin\Debug\netcoreapp3.1\NameSpace.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\bin\Debug\netcoreapp3.1\NameSpace.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\bin\Debug\netcoreapp3.1\NameSpace.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\bin\Debug\netcoreapp3.1\NameSpace.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\bin\Debug\netcoreapp3.1\NameSpace.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\obj\Debug\netcoreapp3.1\NameSpace.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\obj\Debug\netcoreapp3.1\NameSpace.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\obj\Debug\netcoreapp3.1\NameSpace.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\obj\Debug\netcoreapp3.1\NameSpace.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\obj\Debug\netcoreapp3.1\NameSpace.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\NameSpace\NameSpace\obj\Debug\netcoreapp3.1\NameSpace.genruntimeconfig.cache

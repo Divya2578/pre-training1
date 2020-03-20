@@ -1,0 +1,13 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\bin\Debug\netcoreapp3.1\DatatypeExplicit.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\bin\Debug\netcoreapp3.1\DatatypeExplicit.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\bin\Debug\netcoreapp3.1\DatatypeExplicit.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\bin\Debug\netcoreapp3.1\DatatypeExplicit.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\bin\Debug\netcoreapp3.1\DatatypeExplicit.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\bin\Debug\netcoreapp3.1\DatatypeExplicit.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.csprojAssemblyReference.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\DatatypeExplicit\DatatypeExplicit\obj\Debug\netcoreapp3.1\DatatypeExplicit.genruntimeconfig.cache

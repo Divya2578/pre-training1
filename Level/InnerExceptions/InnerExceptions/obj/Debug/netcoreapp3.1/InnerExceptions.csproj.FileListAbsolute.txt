@@ -1,0 +1,12 @@
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\bin\Debug\netcoreapp3.1\InnerExceptions.exe
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\bin\Debug\netcoreapp3.1\InnerExceptions.deps.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\bin\Debug\netcoreapp3.1\InnerExceptions.runtimeconfig.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\bin\Debug\netcoreapp3.1\InnerExceptions.runtimeconfig.dev.json
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\bin\Debug\netcoreapp3.1\InnerExceptions.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\bin\Debug\netcoreapp3.1\InnerExceptions.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\obj\Debug\netcoreapp3.1\InnerExceptions.csproj.CoreCompileInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\obj\Debug\netcoreapp3.1\InnerExceptions.AssemblyInfoInputs.cache
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\obj\Debug\netcoreapp3.1\InnerExceptions.AssemblyInfo.cs
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\obj\Debug\netcoreapp3.1\InnerExceptions.dll
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\obj\Debug\netcoreapp3.1\InnerExceptions.pdb
+C:\Users\Mahesh\Desktop\Dotnet\Level\InnerExceptions\InnerExceptions\obj\Debug\netcoreapp3.1\InnerExceptions.genruntimeconfig.cache
