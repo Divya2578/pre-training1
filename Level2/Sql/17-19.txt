@@ -1,0 +1,96 @@
+*****PART 17****
+#combine the rows of 2 table using UNION ALL
+Select Id, Name, Email from tblEmployee
+UNION ALL
+Select Id, Name, Email from tblPerson
+
+##combine the rows of 2 table using UNION 
+Select Id, Name, Email from tblEmployee
+UNION
+Select Id, Name, Email from tblPerson
+
+Select Id, Name, Email from tblEmployee
+UNION
+Select Id, Name, Email from tblPerson
+Order By Name
+
+*****PART 18*****
+#Creating a simple stored procedure without any parameterS
+Create Procedure spGetEmployees
+as
+Begin
+  Select Name, Gender from tblEmployee
+End
+
+#To execute the stored procedure
+1. spGetEmployees
+2. EXEC spGetEmployees
+3. Execute spGetEmployees
+
+#Creating a stored procedure with input parameters
+Create Procedure spGetEmployeesByGenderAndDepartment 
+@Gender nvarchar(50),
+@DepartmentId int
+as
+Begin
+  Select Name, Gender from tblEmployee Where Gender = @Gender and DepartmentId = @DepartmentId
+End
+
+EXECUTE spGetEmployeesByGenderAndDepartment 'Male', 1
+or
+EXECUTE spGetEmployeesByGenderAndDepartment @DepartmentId=1, @Gender = 'Male'
+
+To view the text, of the stored procedure
+1. Use system stored procedure sp_helptext 'SPName'
+OR
+2. Right Click the SP in Object explorer -> Scrip Procedure as -> Create To -> New Query Editor Window
+
+#To change the stored procedure, use ALTER PROCEDURE statement:
+Alter Procedure spGetEmployeesByGenderAndDepartment 
+@Gender nvarchar(50),
+@DepartmentId int
+as
+Begin
+  Select Name, Gender from tblEmployee Where Gender = @Gender and DepartmentId = @DepartmentId order by Name
+End
+
+Alter Procedure spGetEmployeesByGenderAndDepartment 
+@Gender nvarchar(50),
+@DepartmentId int
+WITH ENCRYPTION
+as
+Begin
+  Select Name, Gender from tblEmployee Where Gender = @Gender and DepartmentId = @DepartmentId
+End
+
+#To delete the SP, use
+ DROP PROC 'SPName' or DROP PROCEDURE 'SPName'
+
+*****PART 19*****
+#To create an SP with output parameter
+Create Procedure spGetEmployeeCountByGender
+@Gender nvarchar(20),
+@EmployeeCount int Output
+as
+Begin
+ Select @EmployeeCount = COUNT(Id) 
+ from tblEmployee 
+ where Gender = @Gender
+End
+
+#To execute this stored procedure with OUTPUT parameter
+Declare @EmployeeTotal int
+Execute spGetEmployeeCountByGender 'Female', @EmployeeTotal output
+Print @EmployeeTotal
+
+Declare @EmployeeTotal int
+Execute spGetEmployeeCountByGender 'Female', @EmployeeTotal
+if(@EmployeeTotal is null)
+ Print '@EmployeeTotal is null'
+else
+ Print '@EmployeeTotal is not null'
+
+#You can pass parameters in any order, when you use the parameter names.
+Declare @EmployeeTotal int
+Execute spGetEmployeeCountByGender @EmployeeCount = @EmployeeTotal OUT, @Gender = 'Male'
+Print @EmployeeTotal
