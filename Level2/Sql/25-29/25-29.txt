@@ -1,0 +1,145 @@
+*******PART  25******
+select getdate() as Time
+select CURRENT_TIMESTAMP
+select SYSDATETIME() 'SYSDATETIME', SYSDATETIMEOFFSET() as sysdateof, GETUTCDATE() as utc, SYSUTCDATETIME() as sysutc 
+
+CREATE TABLE [tblDateTime]
+(
+ [c_time] [time](7) NULL,
+ [c_date] [date] NULL,
+ [c_smalldatetime] [smalldatetime] NULL,
+ [c_datetime] [datetime] NULL,
+ [c_datetime2] [datetime2](7) NULL,
+ [c_datetimeoffset] [datetimeoffset](7) NULL
+)
+
+#To Insert some sample data, execute the following query. 
+INSERT INTO tblDateTime VALUES (GETDATE(),GETDATE(),GETDATE(),GETDATE(),GETDATE(),GETDATE())
+
+*****PART 26*********
+Create Table tblDate
+(
+ID int NOT NULL Primary key,
+[Name] nvarchar(50) NOT NULL,
+DOB nvarchar(50)
+
+)
+
+Insert Into  tblDate(ID, [Name] , DOB)
+VALUES( 1 , 'Dhruv Panchal', '1999-04-08 17:00:38.937' )
+Insert Into  tblDate(ID, [Name] , DOB)
+VALUES(2  , 'Arjun Reddy' , '1998-05-09 07:00:38.937' )
+Insert Into  tblDate(ID, [Name] , DOB)
+Values( 3 , 'Vicky Kaushal', '1990-12-20 13:00:38.937')
+
+
+select getdate() as Time
+select CURRENT_TIMESTAMP
+select SYSDATETIME() 'SYSDATETIME', SYSDATETIMEOFFSET() as sysdateof, GETUTCDATE() as utc, SYSUTCDATETIME() as sysut
+
+select isdate('shivam')
+select isdate('2020-04-29 02:46:55.410') 
+select isdate(getdate()) 
+select isdate('2020-04-29 02:46:55.4104756')
+
+select day(getdate())
+
+select month(getdate())
+
+
+select name ,DOB ,datename(weekday,DOB)as [Day], Month(DOB) as [month] ,Year(DOB) as [Year]
+from tblDate
+
+******PART 27********
+Select DATEPART(weekday, '2012-08-30 19:45:31.793') -- returns 5
+Select DATENAME(weekday, '2012-08-30 19:45:31.793') -- returns Thursday
+
+Select DateAdd(DAY, 20, '2012-08-30 19:45:31.793') 
+-- Returns 2012-09-19 19:45:31.793
+Select DateAdd(DAY, -20, '2012-08-30 19:45:31.793') 
+-- Returns 2012-08-10 19:45:31.793
+
+Select DATEDIFF(MONTH, '11/30/2005','01/31/2006') -- returns 2
+Select DATEDIFF(DAY, '11/30/2005','01/31/2006') -- returns 62
+
+CREATE FUNCTION fnComputeAge(@DOB DATETIME)
+RETURNS NVARCHAR(50)
+AS
+BEGIN
+
+DECLARE @tempdate DATETIME, @years INT, @months INT, @days INT
+SELECT @tempdate = @DOB
+
+SELECT @years = DATEDIFF(YEAR, @tempdate, GETDATE()) - CASE WHEN (MONTH(@DOB) > MONTH(GETDATE())) OR (MONTH(@DOB) = MONTH(GETDATE()) AND DAY(@DOB) > DAY(GETDATE())) THEN 1 ELSE 0 END
+SELECT @tempdate = DATEADD(YEAR, @years, @tempdate)
+
+SELECT @months = DATEDIFF(MONTH, @tempdate, GETDATE()) - CASE WHEN DAY(@DOB) > DAY(GETDATE()) THEN 1 ELSE 0 END
+SELECT @tempdate = DATEADD(MONTH, @months, @tempdate)
+
+SELECT @days = DATEDIFF(DAY, @tempdate, GETDATE())
+
+DECLARE @Age NVARCHAR(50)
+SET @Age = Cast(@years AS  NVARCHAR(4)) + ' Years ' + Cast(@months AS  NVARCHAR(2))+ ' Months ' +  Cast(@days AS  NVARCHAR(2))+ ' Days Old'
+RETURN @Age
+
+End
+
+Select Id, Name, DateOfBirth, dbo.fnComputeAge(DateOfBirth) as Age from tblEmployees
+
+
+*******PART 28*******
+
+SELECT CONVERT(VARCHAR(10),GETDATE(),101)
+SELECT CAST(GETDATE() as DATE)
+SELECT CONVERT(DATE, GETDATE())
+
+Select Id, Name, Name + ' - ' + CAST(Id AS NVARCHAR) AS [Name-Id]
+FROM tblEmployees
+
+#Query:
+Select CAST(RegisteredDate as DATE) as RegistrationDate,
+COUNT(Id) as TotalRegistrations
+From tblRegistrations
+Group By CAST(RegisteredDate as DATE)
+
+*******PART 29*******
+Select CEILING(15.2) -- Returns 16
+Select CEILING(-15.2) -- Returns -15
+
+Select FLOOR(15.2) -- Returns 15
+Select FLOOR(-15.2) -- Returns -16
+
+Select POWER(2,3) -- Returns 8
+
+Select RAND(1) -- Always returns the same value
+
+Select FLOOR(RAND() * 100)
+
+Declare @Counter INT
+Set @Counter = 1
+While(@Counter <= 10)
+Begin
+ Print FLOOR(RAND() * 100)
+ Set @Counter = @Counter + 1
+End
+
+Select SQUARE(9) -- Returns 81
+
+Select SQRT(81) -- Returns 9
+
+Select ROUND(850.556, 2) -- Returns 850.560
+
+-- Truncate anything after 2 places, after (to the right) the decimal point
+Select ROUND(850.556, 2, 1) -- Returns 850.550
+
+-- Round to 1 place after (to the right) the decimal point
+Select ROUND(850.556, 1) -- Returns 850.600
+
+-- Truncate anything after 1 place, after (to the right) the decimal point
+Select ROUND(850.556, 1, 1) -- Returns 850.500
+
+-- Round the last 2 places before (to the left) the decimal point
+Select ROUND(850.556, -2) -- 900.000
+
+-- Round the last 1 place before (to the left) the decimal point
+Select ROUND(850.556, -1) -- 850.000

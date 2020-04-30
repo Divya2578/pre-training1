@@ -1,0 +1,65 @@
+********PART 22 *****
+select ascii('D') as asciiint
+select CHAR(63) as letter
+
+declare @start int 
+set @start=65
+while (@start<=90)
+begin
+print char(@start)
+set @start=@start+1
+end
+
+select ltrim('         Arjun')
+Select ltrim(gender) from tblEmployee
+
+
+select rtrim('  Reddy        ')
+Select rtrim(gender) from tblEmployee
+
+
+Select upper(gender) from tblEmployee
+
+Select lower(gender) from tblEmployee
+
+select reverse(gender) from tblEmployee
+
+
+select len(name)as lengthofname from tblEmployee 
+
+*******PART 23******
+Select * from tblEmployee
+
+select right('Reddy',2)
+select left ('Arjun',4)
+
+select charindex('@', 'vicky20@gmail.com')
+
+select SUBSTRING('vicky20@gmail.com',4,9)
+
+select SUBSTRING('vicky20@gmail.com',charindex('@', 'vicky20@gmail.com')+1,len('vicky20@gmail.com')-charindex('@', 'vicky20@gmail.com'))
+
+select SUBSTRING(Email,charindex('@', Email)+1,len(Email)-charindex('@', Email)) as EmailDomain,count (Email) as Total
+from tblEmployee
+group by SUBSTRING(Email,charindex('@', Email)+1,len(Email)-charindex('@', Email))
+
+
+*********PART 24 *******
+
+Select * from tblEmployee
+
+select replicate('Arjun',3)
+
+
+select id,name , PATINDEX('%@gmail.com', Email) as Firstoc
+from tblEmployee
+where PATINDEX('%@gmail.com', Email)>0
+
+select email, replace(Email, '.com','.net')
+from tblEmployee
+
+select Name,Email,
+stuff (email, 2, 1, '*****') as stuffemail
+from tblEmployee
+
+

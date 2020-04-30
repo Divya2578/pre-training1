@@ -1,0 +1,95 @@
+******PART 30******
+CREATE FUNCTION Age(@DOB Date)  
+RETURNS INT  
+AS  
+BEGIN  
+ DECLARE @Age INT  
+ SET @Age = DATEDIFF(YEAR, @DOB, GETDATE()) - CASE WHEN (MONTH(@DOB) > MONTH(GETDATE())) OR (MONTH(@DOB) = MONTH(GETDATE()) AND DAY(@DOB) > DAY(GETDATE())) THEN 1 ELSE 0 END  
+ RETURN @Age  
+END
+
+
+Select dbo.Age( dbo.Age('05-25-1994'))
+
+
+******PART 31******
+CREATE FUNCTION fn_EmployeesByGender(@Gender nvarchar(10))
+RETURNS TABLE
+AS
+RETURN (Select Id, Name, DateOfBirth, Gender, DepartmentId
+      from tblEmployees
+      where Gender = @Gender)
+
+
+Select * from fn_EmployeesByGender('Male')
+
+
+*******PART 32*******
+Create Function fn_MSTVF_GetEmployees()
+Returns @Table Table (Id int, Name nvarchar(20), DOB Date)
+as
+Begin
+ Insert into @Table
+ Select Id, Name, Cast(DateOfBirth as Date)
+ From tblEmployee
+ 
+ Return
+End
+
+
+Select * from fn_MSTVF_GetEmployees()
+
+
+*********PART 33******
+
+Create Function fn_GetEmployeeNameById(@Id int)
+Returns nvarchar(20)
+as
+Begin
+ Return (Select Name from tblEmployees Where Id = @Id)
+End
+
+sp_helptex fn_GetEmployeeNameById
+
+Alter Function fn_GetEmployeeNameById(@Id int)
+Returns nvarchar(20)
+With Encryption
+as
+Begin
+ Return (Select Name from tblEmployees Where Id = @Id)
+End
+
+
+Alter Function fn_GetEmployeeNameById(@Id int)
+Returns nvarchar(20)
+With SchemaBinding
+as
+Begin
+ Return (Select Name from dbo.tblEmployees Where Id = @Id)
+End
+
+*********PART 34*********
+##Local Table
+Create Procedure spCreateLocalTempTable
+as
+Begin
+Create Table #PersonDetails(Id int, Name nvarchar(20))
+
+Insert into #PersonDetails Values(1, 'Sneha')
+Insert into #PersonDetails Values(2, 'Himali')
+Insert into #PersonDetails Values(3, 'Lovely')
+
+Select * from #PersonDetails
+End
+
+Execute spCreateLocalTempTable
+
+
+###Global Table
+
+Create Table ##EmployeeDetails(Id int, Name nvarchar(20))
+
+Select * From ##EmployeeDetails
+
+Insert into ##EmployeeDetails Values(1, 'Vijay')
+Insert into ##EmployeeDetails Values(2, 'Ashwin')

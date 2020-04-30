@@ -1,0 +1,28 @@
+******PART 35********* 
+Select *From tblEmployee
+Select * from tblDepartment
+
+Create  Index IX_tblEmployee_Salary
+On tblEmployee (Salary ASC)
+
+******Part 36*******
+Create Clustered  Index IX_tblEmployeeSalary
+On tblEmployee (Salary ASC)
+
+Create NonClustered  Index IX_tblDepartmentName
+On tblDepartment (DepartmentName)
+
+
+*******PART 37*******
+Create Unique NonClustered Index UIX_tblEmployee_FirstName_LastName
+On tblEmployee(FirstName, LastName)
+
+ALTER TABLE tblEmployee 
+ADD CONSTRAINT UQ_tblEmployee_City 
+UNIQUE NONCLUSTERED (City)
+
+EXECUTE SP_HELPCONSTRAINT
+
+CREATE UNIQUE INDEX IX_tblEmployee_City
+ON tblEmployee(City)
+WITH IGNORE_DUP_KEY

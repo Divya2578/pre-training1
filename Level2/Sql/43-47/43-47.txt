@@ -1,0 +1,240 @@
+*******PART 43*****
+CREATE TABLE tblEmployeeAudit
+(
+  Id int identity(1,1) primary key,
+  AuditData nvarchar(1000)
+)
+
+ AFTER TRIGGER for INSERT event on tblEmployee table:
+CREATE TRIGGER tr_tblEMployee_ForInsert
+ON tblEmployee
+FOR INSERT
+AS
+BEGIN
+ Declare @Id int
+ Select @Id = Id from inserted
+ 
+ insert into tblEmployeeAudit 
+ values('New employee with Id  = ' + Cast(@Id as nvarchar(5)) + ' is added at ' + cast(Getdate() as nvarchar(20)))
+END
+
+Insert into tblEmployee values (11,'Himali Kholi','kholihimali@gmail.com', 'Female',23000, 3)
+
+AFTER TRIGGER for DELETE event on tblEmployee table:
+CREATE TRIGGER tr_tblEMployee_ForDelete
+ON tblEmployee
+FOR DELETE
+AS
+BEGIN
+ Declare @Id int
+ Select @Id = Id from deleted
+
+insert into tblEmployeeAudit 
+ values('An existing employee with Id  = ' + Cast(@Id as nvarchar(5)) + ' is deleted at ' + Cast(Getdate() as nvarchar(20)))
+END
+
+Delete from tblEmployee where ID = 11
+
+*******PART 44******
+#Create AFTER UPDATE trigger script:
+Create trigger tr_tblEmployee_ForUpdate
+on tblEmployee
+for Update
+as
+Begin
+ Select * from deleted
+ Select * from inserted 
+End
+
+execute this query:
+Update tblEmployee set Name = 'Arjun Reddy', Email= 'arjunreddy@gmail.com',Salary = 45000, 
+Gender = 'Male' where Id = 3
+
+#The following AFTER UPDATE trigger, audits employee information upon UPDATE
+Alter trigger tr_tblEmployee_ForUpdate
+on tblEmployee
+for Update
+as
+Begin
+      -- Declare variables to hold old and updated data
+      Declare @Id int
+      Declare @OldName nvarchar(20), @NewName nvarchar(20)
+      Declare @OldSalary int, @NewSalary int
+      Declare @OldGender nvarchar(20), @NewGender nvarchar(20)
+      Declare @OldDeptId int, @NewDeptId int
+     
+      -- Variable to build the audit string
+      Declare @AuditString nvarchar(1000)
+      
+      -- Load the updated records into temporary table
+      Select *
+      into #TempTable
+      from inserted
+     
+      -- Loop thru the records in temp table
+      While(Exists(Select Id from #TempTable))
+      Begin
+            --Initialize the audit string to empty string
+            Set @AuditString = ''
+           
+            -- Select first row data from temp table
+            Select Top 1 @Id = Id, @NewName = Name, 
+            @NewGender = Gender, @NewSalary = Salary,
+            @NewDeptId = DepartmentId
+            from #TempTable
+           
+            -- Select the corresponding row from deleted table
+            Select @OldName = Name, @OldGender = Gender, 
+            @OldSalary = Salary, @OldDeptId = DepartmentId
+            from deleted where Id = @Id
+   
+     -- Build the audit string dynamically           
+            Set @AuditString = 'Employee with Id = ' + Cast(@Id as nvarchar(4)) + ' changed'
+            if(@OldName <> @NewName)
+                  Set @AuditString = @AuditString + ' NAME from ' + @OldName + ' to ' + @NewName
+                 
+            if(@OldGender <> @NewGender)
+                  Set @AuditString = @AuditString + ' GENDER from ' + @OldGender + ' to ' + @NewGender
+                 
+            if(@OldSalary <> @NewSalary)
+                  Set @AuditString = @AuditString + ' SALARY from ' + Cast(@OldSalary as nvarchar(10))+ ' to ' + Cast(@NewSalary as nvarchar(10))
+                  
+     if(@OldDeptId <> @NewDeptId)
+                  Set @AuditString = @AuditString + ' DepartmentId from ' + Cast(@OldDeptId as nvarchar(10))+ ' to ' + Cast(@NewDeptId as nvarchar(10))
+           
+            insert into tblEmployeeAudit values(@AuditString)
+            
+            -- Delete the row from temp table, so we can move to the next row
+            Delete from #TempTable where Id = @Id
+      End
+End
+
+
+********PART 45********
+#Script to create the view:
+Create view vWEmployeeDetails
+as
+Select tblEmployee.ID, Name, Gender, DepartmentName
+from tblEmployee 
+join tblDepartment
+on tblEmployee.DepartmentId = tblDepartment.ID
+
+#execute
+Select * from vWEmployeeDetails
+
+Insert into vWEmployeeDetails values(7, 'Valarie', 'Female', 'IT')
+
+#Script to create INSTEAD OF INSERT trigger:
+Create trigger tr_vWEmployeeDetails_InsteadOfInsert
+on vWEmployeeDetails
+Instead Of Insert
+as
+Begin
+ Declare @DeptId int
+ 
+ --Check if there is a valid DepartmentId
+ --for the given DepartmentName
+ Select @DeptId = tblDepartment.ID
+ from tblDepartment 
+ join inserted
+ on inserted.DepartmentName = tblDepartment.DepartmentName
+ 
+ --If DepartmentId is null throw an error
+ --and stop processing
+ if(@DeptId is null)
+ Begin
+  Raiserror('Invalid Department Name. Statement terminated', 16, 1)
+  return
+ End
+ 
+ --Finally insert into tblEmployee table
+ Insert into tblEmployee(Id, Name, Gender, DepartmentId)
+ Select Id, Name, Gender, @DeptId
+ from inserted
+End
+
+Insert into vWEmployeeDetails values(3, 'Vijay Devarkonda', 'Male', 'HR')
+
+
+*******PART 46******
+#Script to create the view:
+Create view vWEmployeeDetails
+as
+Select Id, Name, Gender, DepartmentName
+from tblEmployee 
+join tblDepartment
+on tblEmployee.DepartmentId = tblDepartment.ID
+
+#execute, 
+Select * from vWEmployeeDetails
+
+Update vWEmployeeDetails 
+set Name = 'Johny', DeptName = 'IT'
+where Id = 1
+
+Update vWEmployeeDetails 
+set DeptName = 'IT'
+where Id = 1
+
+Update tblDepartment set DeptName = 'HR' where DeptId = 3
+
+Script to create INSTEAD OF UPDATE trigger:
+Create Trigger tr_vWEmployeeDetails_InsteadOfUpdate
+on vWEmployeeDetails
+instead of update
+as
+Begin
+ -- if EmployeeId is updated
+ if(Update(Id))
+ Begin
+  Raiserror('Id cannot be changed', 16, 1)
+  Return
+ End
+ 
+ -- If DeptName is updated
+ if(Update(DepartmentName)) 
+ Begin
+  Declare @DeptId int
+
+  Select @DeptId = tblDepartment.ID
+  from tblDepartment
+  join inserted
+  on inserted.DepartmentName = tblDepartment.DepartmentName
+  
+  if(@DeptId is NULL )
+  Begin
+   Raiserror('Invalid Department Name', 16, 1)
+   Return
+  End
+ End
+ End
+
+Now, let's try to update JOHN's Department to IT. 
+Update vWEmployeeDetails 
+set DeptName = 'IT'
+where Id = 1
+
+Update vWEmployeeDetails 
+set Name = 'Johny', Gender = 'Female', DeptName = 'IT' 
+where Id = 1
+
+*******Part 47*****
+Delete from vWEmployeeDetails where Id = 1
+
+#Script to create INSTEAD OF DELETE trigger:
+Create Trigger tr_vWEmployeeDetails_InsteadOfDelete
+on vWEmployeeDetails
+instead of delete
+as
+Begin
+ Delete tblEmployee 
+ from tblEmployee
+ join deleted
+ on tblEmployee.Id = deleted.Id
+ 
+ --Subquery
+ --Delete from tblEmployee 
+ --where Id in (Select Id from deleted)
+End
+
+Delete from vWEmployeeDetails where Id = 1
