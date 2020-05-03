@@ -1,0 +1,137 @@
+*********PART 91********
+Select D.DepartmentName, E.Name, E.Gender, E.Salary
+from tblDepartment D
+Inner Join tblEmployee E
+On D.Id = E.DepartmentId
+
+Select D.DepartmentName, E.Name, E.Gender, E.Salary
+from  tblDepartment D
+Left Join tblEmployee E
+On D.Id = E.DepartmentId
+
+
+Create function fn_GetEmployeesByDepartmentId(@DepartmentId int)
+Returns Table
+as
+Return
+(
+    Select Id, Name, Gender, Salary, DepartmentId
+    from tblEmployee where DepartmentId = @DepartmentId
+)
+Go
+
+Select * from fn_GetEmployeesByDepartmentId(2)
+
+
+Select D.DepartmentName, E.Name, E.Gender, E.Salary
+from tblDepartment D
+Inner Join fn_GetEmployeesByDepartmentId(D.Id) E
+On D.Id = E.DepartmentId
+
+
+Select D.DepartmentName, E.Name, E.Gender, E.Salary
+from tblDepartment  D
+Cross Apply fn_GetEmployeesByDepartmentId(D.Id) E
+
+Select D.DepartmentName, E.Name, E.Gender, E.Salary
+from tblDepartment D
+Outer Apply fn_GetEmployeesByDepartmentId(D.Id) E
+
+*******PART 92*******
+CREATE TRIGGER trMyFirstTrigger
+ON Database
+FOR CREATE_TABLE
+AS
+BEGIN
+   Print 'New table created'
+END
+
+Create Table Test (Id int)
+
+ALTER TRIGGER trMyFirstTrigger
+ON Database
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+   Print 'A table has just been created, modified or deleted'
+END
+
+ALTER TRIGGER trMyFirstTrigger
+ON Database
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+   Rollback 
+   Print 'You cannot create, alter or drop a table'
+END
+
+DISABLE TRIGGER trMyFirstTrigger ON DATABASE
+
+ENABLE TRIGGER trMyFirstTrigger ON DATABASE
+
+DROP TRIGGER trMyFirstTrigger ON DATABASE
+
+
+CREATE TRIGGER trRenameTable
+ON DATABASE
+FOR RENAME
+AS
+BEGIN
+    Print 'You just renamed something'
+END
+
+sp_rename 'TestTable', 'NewTestTable
+
+sp_rename 'NewTestTable.Id' , 'NewId', 'column'
+
+*********PART 93 *******
+
+CREATE TRIGGER tr_DatabaseScopeTrigger
+ON DATABASE
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+    ROLLBACK
+    Print 'You cannot create, alter or drop a table in the current database'
+END
+
+CREATE TRIGGER tr_ServerScopeTrigger
+ON ALL SERVER
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+    ROLLBACK
+    Print 'You cannot create, alter or drop a table in any database on the server'
+END
+
+DISABLE TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+
+ENABLE TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+
+DROP TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+
+*********PART 94*********
+CREATE TRIGGER tr_DatabaseScopeTrigger
+ON DATABASE
+FOR CREATE_TABLE
+AS
+BEGIN
+    Print 'Database Scope Trigger'
+END
+GO
+
+CREATE TRIGGER tr_ServerScopeTrigger
+ON ALL SERVER
+FOR CREATE_TABLE
+AS
+BEGIN
+    Print 'Server Scope Trigger'
+END
+GO
+
+EXEC sp_settriggerorder
+@triggername = 'tr_DatabaseScopeTrigger1',
+@order = 'none',
+@stmttype = 'CREATE_TABLE',
+@namespace = 'DATABASE'
+GO

@@ -1,0 +1,218 @@
+********PART 52*******
+Create Table tblEmpInfo
+(
+
+[Name] nvarchar(50) NOT NULL,
+Gender nvarchar(50),
+Salary int,
+DeptName nvarchar(5),
+DeptHead nvarchar(50),
+DeptLocation nvarchar(50)
+)
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+VALUES( 'Dhru Panchal', 'Male' , 55000 ,'IT','Haresh','Mumbai' )
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+VALUES( 'Divya Tadooru','Female', 10000,'HR','Harsha','Chennai'  );
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+Values( 'Varun Dhavan', 'Male',35000,'IT','Haresh', 'Yemen' )
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+Values( 'Rashi Khanna','Female',75000,'HR','Harsha','Wuhan' )
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+Values( 'Parth Samthan', 'Male',47000,'IT','Haresh','Mumbai' )
+
+select * from tblEmpInfo
+
+Create Table tblEmpInfo1nf
+(
+
+[Name] nvarchar(50) NOT NULL,
+Gender nvarchar(50),
+Salary int,
+DeptName nvarchar(5),
+DeptHead nvarchar(50),
+DeptLocation nvarchar(50)
+)
+
+Insert Into  tblEmpInfo1nf( [Name] , Gender, DeptName, DeptHead, DeptLocation)
+VALUES( 'Dhruv Panchal Varun Dhavan Parth Samthan', 'Male' ,'IT','Haresh','mumbai' )
+Insert Into  tblEmpInfo1nf( [Name] , Gender, DeptName, DeptHead, DeptLocation)
+VALUES( 'Divya Tadooru Rashi Khanna','Female','HR','Harsha','Chennai'  );
+
+select [Name],Gender,DeptName
+from tblEmpInfo
+
+
+select [Name],Gender,DeptName
+from tblEmpInfo1nf
+
+*********PART 53*********
+select * from tblEmpInfo
+
+Create Table tblEmpInfo1nf
+(
+
+[Name] nvarchar(50) NOT NULL,
+Gender nvarchar(50),
+Salary int,
+DeptName nvarchar(5),
+DeptHead nvarchar(50),
+DeptLocation nvarchar(50)
+)
+
+
+
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+VALUES( 'Dhru Panchal', 'Male' , 55000 ,'IT','Haresh','Mumbai' )
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+VALUES( 'Divya Tadooru','Female', 10000,'HR','Harsha','Chennai'  );
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+Values( 'Varun Dhavan', 'Male',35000,'IT','Haresh', 'Yemen' )
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+Values( 'Rashi Khanna','Female',75000,'HR','Harsha','Wuhan' )
+Insert Into  tblEmpInfo( [Name] , Gender, Salary, DeptName, DeptHead, DeptLocation)
+Values( 'Parth Samthan', 'Male',47000,'IT','Haresh','Mumbai' )
+
+Create Table tblEmpInfo1
+(
+ID int NOT NULL Primary key,
+[Name] nvarchar(50) NOT NULL,
+Gender nvarchar(50),
+Salary int,
+DeptID int,
+CONSTRAINT FK_Dept FOREIGN KEY (DeptID)
+REFERENCES tblEmpInfo2(DeptID)
+)
+
+Insert Into  tblEmpInfo1(ID, [Name] , Gender, Salary, DeptID)
+VALUES(1, 'Dhruv Panchal', 'Male' , 55000 ,1 )
+Insert Into  tblEmpInfo1(ID, [Name] , Gender, Salary, DeptID)
+VALUES(2, 'Divya Tadooru','Female', 10000,2  );
+Insert Into  tblEmpInfo1(ID, [Name] , Gender, Salary, DeptID)
+Values( 3,'Varun Dhavan', 'Male',35000,2)
+Insert Into  tblEmpInfo1(ID, [Name] , Gender, Salary, DeptID)
+Values( 4,'Rashi Khanna','Female',75000,1 )
+Insert Into  tblEmpInfo1(ID, [Name] , Gender, Salary, DeptID)
+Values( 5,'Parth Samthan', 'Male',47000,2 )
+
+Create Table tblEmpInfo2
+(
+
+DeptID int Primary key,
+DeptHead nvarchar(50),
+DeptLocation nvarchar(50)
+)
+
+Insert Into  tblEmpInfo2( DeptID, DeptHead, DeptLocation)
+VALUES(1,'Haresh','mumbai' )
+
+Insert Into  tblEmpInfo2( DeptID, DeptHead, DeptLocation)
+VALUES(2,'Harsha','chennai' )
+
+select * from tblEmpInfo
+select * from tblEmpInfo2
+select * from tblEmpInfo1
+
+*********PART 54*********
+Create Table tblSales
+(
+SalesAgent nvarchar(50),
+SalesCountry nvarchar(50),
+SalesAmount int
+)
+select * from tblSales
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',100)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',160)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',180)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','US',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','US',129)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','US',121)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','UK',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','UK',920)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','UK',420)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',170)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Dhruv','Ind',120)
+
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','Ind',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','Ind',920)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','Ind',320)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','Ind',520)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','US',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','US',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','US',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','US',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','UK',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','UK',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','UK',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Varun','UK',120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Rashi','Ind',1200)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Rashi','US',1120)
+
+insert into tblSales(SalesAgent,SalesCountry,SalesAmount)
+values('Rashi','UK',1120)
+
+
+select * from tblSales
+Select SalesAgent,Ind,US,UK
+from tblSales
+pivot
+(
+sum(SalesAmount)
+for SalesCountry
+in([Ind],[US],[UK])
+)
+as pivottable

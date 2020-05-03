@@ -1,0 +1,142 @@
+*********PART 69**********
+Create table StudentSource
+(
+     ID int primary key,
+     Name nvarchar(20)
+)
+GO
+
+Insert into StudentSource values (1, 'Mahesh')
+Insert into StudentSource values (2, 'Dipesh')
+GO
+Create table StudentTarget
+(
+     ID int primary key,
+     Name nvarchar(20)
+)
+GO
+
+Insert into StudentTarget values (1, 'Mike M')
+Insert into StudentTarget values (3, 'John')
+GO
+
+MERGE StudentTarget AS T
+USING StudentSource AS S
+ON T.ID = S.ID
+WHEN MATCHED THEN
+     UPDATE SET T.NAME = S.NAME
+WHEN NOT MATCHED BY TARGET THEN
+     INSERT (ID, NAME) VALUES(S.ID, S.NAME)
+WHEN NOT MATCHED BY SOURCE THEN
+     DELETE;
+
+Truncate table StudentSource
+Truncate table StudentTarget
+GO
+
+Insert into StudentSource values (1, 'Mahesh')
+Insert into StudentSource values (2, 'Dinesh')
+GO
+
+Insert into StudentTarget values (1, 'Mahesh T')
+Insert into StudentTarget values (3, 'Mitesh')
+GO
+
+MERGE StudentTarget AS T
+USING StudentSource AS S
+ON T.ID = S.ID
+WHEN MATCHED THEN
+     UPDATE SET T.NAME = S.NAME
+WHEN NOT MATCHED BY TARGET THEN
+     INSERT (ID, NAME) VALUES(S.ID, S.NAME);
+
+select * from StudentSource
+select * from StudentTarget
+
+
+********PART 70********
+BEGIN TRY
+    BEGIN TRANSACTION
+         UPDATE Accounts SET Balance = Balance - 100 WHERE Id = 1
+         UPDATE Accounts SET Balance = Balance + 100 WHERE Id = 2
+    COMMIT TRANSACTION
+    PRINT 'Transaction Committed'
+END TRY
+BEGIN CATCH
+    ROLLBACK TRANSACTION
+    PRINT 'Transaction Rolled back'
+END CATCH
+
+********PART 71********
+
+
+--Transaction 1
+
+Create table tblInventory
+(
+    Id int identity primary key,
+    Product nvarchar(100),
+    ItemsInStock int
+)
+Go
+
+Insert into tblInventory values ('iPhone', 10)
+
+
+
+--Transaction 2
+
+Select *From tblInventory
+
+
+Set Transaction Isolation Level Read Uncommitted
+Select * from tblInventory where Id=1
+
+
+
+********PART 72********
+
+-Transaction 1
+
+Begin Tran
+Declare @ItemsInStock int
+
+Select @ItemsInStock = ItemsInStock
+from tblInventory where Id=1
+
+-- Transaction takes 10 seconds
+Waitfor Delay '00:00:10'
+Set @ItemsInStock = @ItemsInStock - 1
+
+Update tblInventory
+Set ItemsInStock = @ItemsInStock where Id=1
+
+Print @ItemsInStock
+
+Commit Transaction
+
+
+
+
+
+
+--Transaction 2
+
+Set Transaction Isolation Level Repeatable Read
+
+Begin Tran
+Declare @ItemsInStock int
+
+Select @ItemsInStock = ItemsInStock
+from tblInventory where Id=1
+
+-- Transaction takes 10 seconds
+Waitfor Delay '00:00:1'
+Set @ItemsInStock = @ItemsInStock - 2
+
+Update tblInventory
+Set ItemsInStock = @ItemsInStock where Id=1
+
+Print @ItemsInStock
+
+Commit Transaction
