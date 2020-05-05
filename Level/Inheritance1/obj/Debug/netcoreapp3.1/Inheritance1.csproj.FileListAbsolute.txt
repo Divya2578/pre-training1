@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Inheritance1\bin\Debug\netcoreapp3.1\Inheritance1.exe
+E:\Divya Soft\Dotnet\Level\Inheritance1\bin\Debug\netcoreapp3.1\Inheritance1.deps.json
+E:\Divya Soft\Dotnet\Level\Inheritance1\bin\Debug\netcoreapp3.1\Inheritance1.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Inheritance1\bin\Debug\netcoreapp3.1\Inheritance1.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Inheritance1\bin\Debug\netcoreapp3.1\Inheritance1.dll
+E:\Divya Soft\Dotnet\Level\Inheritance1\bin\Debug\netcoreapp3.1\Inheritance1.pdb
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.dll
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.pdb
+E:\Divya Soft\Dotnet\Level\Inheritance1\obj\Debug\netcoreapp3.1\Inheritance1.genruntimeconfig.cache
