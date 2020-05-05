@@ -1,0 +1,12 @@
+E:\Divya Soft\Dotnet\Level\Namespace1\bin\Debug\netcoreapp3.1\Namespace1.exe
+E:\Divya Soft\Dotnet\Level\Namespace1\bin\Debug\netcoreapp3.1\Namespace1.deps.json
+E:\Divya Soft\Dotnet\Level\Namespace1\bin\Debug\netcoreapp3.1\Namespace1.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Namespace1\bin\Debug\netcoreapp3.1\Namespace1.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Namespace1\bin\Debug\netcoreapp3.1\Namespace1.dll
+E:\Divya Soft\Dotnet\Level\Namespace1\bin\Debug\netcoreapp3.1\Namespace1.pdb
+E:\Divya Soft\Dotnet\Level\Namespace1\obj\Debug\netcoreapp3.1\Namespace1.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Namespace1\obj\Debug\netcoreapp3.1\Namespace1.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Namespace1\obj\Debug\netcoreapp3.1\Namespace1.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Namespace1\obj\Debug\netcoreapp3.1\Namespace1.dll
+E:\Divya Soft\Dotnet\Level\Namespace1\obj\Debug\netcoreapp3.1\Namespace1.pdb
+E:\Divya Soft\Dotnet\Level\Namespace1\obj\Debug\netcoreapp3.1\Namespace1.genruntimeconfig.cache
