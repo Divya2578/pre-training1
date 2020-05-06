@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Delegates2\bin\Debug\netcoreapp3.1\Delegates2.exe
+E:\Divya Soft\Dotnet\Level\Delegates2\bin\Debug\netcoreapp3.1\Delegates2.deps.json
+E:\Divya Soft\Dotnet\Level\Delegates2\bin\Debug\netcoreapp3.1\Delegates2.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Delegates2\bin\Debug\netcoreapp3.1\Delegates2.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Delegates2\bin\Debug\netcoreapp3.1\Delegates2.dll
+E:\Divya Soft\Dotnet\Level\Delegates2\bin\Debug\netcoreapp3.1\Delegates2.pdb
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.dll
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.pdb
+E:\Divya Soft\Dotnet\Level\Delegates2\obj\Debug\netcoreapp3.1\Delegates2.genruntimeconfig.cache
