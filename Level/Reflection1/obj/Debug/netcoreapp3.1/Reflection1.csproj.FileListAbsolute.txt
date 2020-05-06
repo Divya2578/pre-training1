@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Reflection1\bin\Debug\netcoreapp3.1\Reflection1.exe
+E:\Divya Soft\Dotnet\Level\Reflection1\bin\Debug\netcoreapp3.1\Reflection1.deps.json
+E:\Divya Soft\Dotnet\Level\Reflection1\bin\Debug\netcoreapp3.1\Reflection1.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Reflection1\bin\Debug\netcoreapp3.1\Reflection1.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Reflection1\bin\Debug\netcoreapp3.1\Reflection1.dll
+E:\Divya Soft\Dotnet\Level\Reflection1\bin\Debug\netcoreapp3.1\Reflection1.pdb
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.dll
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.pdb
+E:\Divya Soft\Dotnet\Level\Reflection1\obj\Debug\netcoreapp3.1\Reflection1.genruntimeconfig.cache
