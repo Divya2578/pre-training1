@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\dict_list\bin\Debug\netcoreapp3.1\dict_list.exe
+E:\Divya Soft\Dotnet\Level\dict_list\bin\Debug\netcoreapp3.1\dict_list.deps.json
+E:\Divya Soft\Dotnet\Level\dict_list\bin\Debug\netcoreapp3.1\dict_list.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\dict_list\bin\Debug\netcoreapp3.1\dict_list.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\dict_list\bin\Debug\netcoreapp3.1\dict_list.dll
+E:\Divya Soft\Dotnet\Level\dict_list\bin\Debug\netcoreapp3.1\dict_list.pdb
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.dll
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.pdb
+E:\Divya Soft\Dotnet\Level\dict_list\obj\Debug\netcoreapp3.1\dict_list.genruntimeconfig.cache
