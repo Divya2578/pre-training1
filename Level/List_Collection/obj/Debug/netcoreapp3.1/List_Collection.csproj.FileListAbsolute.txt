@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\List_Collection\bin\Debug\netcoreapp3.1\List_Collection.exe
+E:\Divya Soft\Dotnet\Level\List_Collection\bin\Debug\netcoreapp3.1\List_Collection.deps.json
+E:\Divya Soft\Dotnet\Level\List_Collection\bin\Debug\netcoreapp3.1\List_Collection.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\List_Collection\bin\Debug\netcoreapp3.1\List_Collection.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\List_Collection\bin\Debug\netcoreapp3.1\List_Collection.dll
+E:\Divya Soft\Dotnet\Level\List_Collection\bin\Debug\netcoreapp3.1\List_Collection.pdb
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.dll
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.pdb
+E:\Divya Soft\Dotnet\Level\List_Collection\obj\Debug\netcoreapp3.1\List_Collection.genruntimeconfig.cache
