@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.exe
+E:\Divya Soft\Dotnet\Level\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.deps.json
+E:\Divya Soft\Dotnet\Level\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.dll
+E:\Divya Soft\Dotnet\Level\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.pdb
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.dll
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.pdb
+E:\Divya Soft\Dotnet\Level\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.genruntimeconfig.cache
