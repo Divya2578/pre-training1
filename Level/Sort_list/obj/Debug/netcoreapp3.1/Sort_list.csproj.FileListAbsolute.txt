@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Sort_list\bin\Debug\netcoreapp3.1\Sort_list.exe
+E:\Divya Soft\Dotnet\Level\Sort_list\bin\Debug\netcoreapp3.1\Sort_list.deps.json
+E:\Divya Soft\Dotnet\Level\Sort_list\bin\Debug\netcoreapp3.1\Sort_list.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Sort_list\bin\Debug\netcoreapp3.1\Sort_list.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Sort_list\bin\Debug\netcoreapp3.1\Sort_list.dll
+E:\Divya Soft\Dotnet\Level\Sort_list\bin\Debug\netcoreapp3.1\Sort_list.pdb
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.dll
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.pdb
+E:\Divya Soft\Dotnet\Level\Sort_list\obj\Debug\netcoreapp3.1\Sort_list.genruntimeconfig.cache
