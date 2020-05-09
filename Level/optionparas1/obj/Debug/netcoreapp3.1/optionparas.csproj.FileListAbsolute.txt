@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.csprojAssemblyReference.cache
 E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.csproj.CoreCompileInputs.cache
 E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.AssemblyInfoInputs.cache
@@ -11,3 +12,18 @@ E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.pdb
 E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.dll
 E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.pdb
 E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.genruntimeconfig.cache
+=======
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.exe
+E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.deps.json
+E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.dll
+E:\Divya Soft\Dotnet\Level\optionparas\bin\Debug\netcoreapp3.1\optionparas.pdb
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.dll
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.pdb
+E:\Divya Soft\Dotnet\Level\optionparas\obj\Debug\netcoreapp3.1\optionparas.genruntimeconfig.cache
+>>>>>>> 3a2589c16a379f05e76bc0b76955d6a3b62be7a7

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "61AzT+bvgr7uNpbkWD7BCp4ikkB7FFqHe0uaaIRPI1Put9vBc5fsEgoP5XRwgGjRL58EkvKmMVUWLtKVoDajEQ==",
@@ -5,4 +6,13 @@
   "projectFilePath": "E:\\Divya Soft\\Dotnet\\Level\\Reflection\\Reflection.csproj",
   "expectedPackageFiles": [],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "61AzT+bvgr7uNpbkWD7BCp4ikkB7FFqHe0uaaIRPI1Put9vBc5fsEgoP5XRwgGjRL58EkvKmMVUWLtKVoDajEQ==",
+  "success": true,
+  "projectFilePath": "E:\\Divya Soft\\Dotnet\\Level\\Reflection\\Reflection.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> 3a2589c16a379f05e76bc0b76955d6a3b62be7a7
 }

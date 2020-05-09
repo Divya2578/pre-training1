@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "y+7t2MMVaKUa44r5BwkCLspkMuqjEa4OVq5n2mLL982orLDobXgnlrYZdhbzHvGrgG/IR7/2SmH7ohPfKEigcA==",
@@ -5,4 +6,13 @@
   "projectFilePath": "E:\\Divya Soft\\Dotnet\\Level\\delegate1\\delegate1.csproj",
   "expectedPackageFiles": [],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "y+7t2MMVaKUa44r5BwkCLspkMuqjEa4OVq5n2mLL982orLDobXgnlrYZdhbzHvGrgG/IR7/2SmH7ohPfKEigcA==",
+  "success": true,
+  "projectFilePath": "E:\\Divya Soft\\Dotnet\\Level\\delegate1\\delegate1.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> 3a2589c16a379f05e76bc0b76955d6a3b62be7a7
 }

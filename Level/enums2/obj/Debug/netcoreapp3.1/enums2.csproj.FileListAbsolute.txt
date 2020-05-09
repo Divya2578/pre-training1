@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.exe
 E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.deps.json
 E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.runtimeconfig.json
@@ -10,3 +11,17 @@ E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.AssemblyInfo.cs
 E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.dll
 E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.pdb
 E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.genruntimeconfig.cache
+=======
+E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.exe
+E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.deps.json
+E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.dll
+E:\Divya Soft\Dotnet\Level\enums2\bin\Debug\netcoreapp3.1\enums2.pdb
+E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.dll
+E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.pdb
+E:\Divya Soft\Dotnet\Level\enums2\obj\Debug\netcoreapp3.1\enums2.genruntimeconfig.cache
+>>>>>>> 3a2589c16a379f05e76bc0b76955d6a3b62be7a7

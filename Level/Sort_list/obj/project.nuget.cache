@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "7cwL2WHkx5gxwpXIS+8qq/UBfqT+x2m88sc7n5vZ8xBzl558elmMdW3to9p7USOWa0MaNTjr7RSrSUNNIqNLkQ==",
@@ -5,4 +6,13 @@
   "projectFilePath": "E:\\Divya Soft\\Dotnet\\Level\\Sort_list\\Sort_list.csproj",
   "expectedPackageFiles": [],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "7cwL2WHkx5gxwpXIS+8qq/UBfqT+x2m88sc7n5vZ8xBzl558elmMdW3to9p7USOWa0MaNTjr7RSrSUNNIqNLkQ==",
+  "success": true,
+  "projectFilePath": "E:\\Divya Soft\\Dotnet\\Level\\Sort_list\\Sort_list.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> 3a2589c16a379f05e76bc0b76955d6a3b62be7a7
 }
