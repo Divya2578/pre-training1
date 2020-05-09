@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Partial3\bin\Debug\netcoreapp3.1\Partial3.exe
+E:\Divya Soft\Dotnet\Level\Partial3\bin\Debug\netcoreapp3.1\Partial3.deps.json
+E:\Divya Soft\Dotnet\Level\Partial3\bin\Debug\netcoreapp3.1\Partial3.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Partial3\bin\Debug\netcoreapp3.1\Partial3.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Partial3\bin\Debug\netcoreapp3.1\Partial3.dll
+E:\Divya Soft\Dotnet\Level\Partial3\bin\Debug\netcoreapp3.1\Partial3.pdb
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.dll
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.pdb
+E:\Divya Soft\Dotnet\Level\Partial3\obj\Debug\netcoreapp3.1\Partial3.genruntimeconfig.cache

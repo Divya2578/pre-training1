@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Generics\bin\Debug\netcoreapp3.1\Generics.exe
+E:\Divya Soft\Dotnet\Level\Generics\bin\Debug\netcoreapp3.1\Generics.deps.json
+E:\Divya Soft\Dotnet\Level\Generics\bin\Debug\netcoreapp3.1\Generics.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Generics\bin\Debug\netcoreapp3.1\Generics.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Generics\bin\Debug\netcoreapp3.1\Generics.dll
+E:\Divya Soft\Dotnet\Level\Generics\bin\Debug\netcoreapp3.1\Generics.pdb
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.dll
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.pdb
+E:\Divya Soft\Dotnet\Level\Generics\obj\Debug\netcoreapp3.1\Generics.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+E:\Divya Soft\Dotnet\Level\poly\bin\Debug\netcoreapp3.1\poly.exe
+E:\Divya Soft\Dotnet\Level\poly\bin\Debug\netcoreapp3.1\poly.deps.json
+E:\Divya Soft\Dotnet\Level\poly\bin\Debug\netcoreapp3.1\poly.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\poly\bin\Debug\netcoreapp3.1\poly.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\poly\bin\Debug\netcoreapp3.1\poly.dll
+E:\Divya Soft\Dotnet\Level\poly\bin\Debug\netcoreapp3.1\poly.pdb
+E:\Divya Soft\Dotnet\Level\poly\obj\Debug\netcoreapp3.1\poly.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\poly\obj\Debug\netcoreapp3.1\poly.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\poly\obj\Debug\netcoreapp3.1\poly.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\poly\obj\Debug\netcoreapp3.1\poly.dll
+E:\Divya Soft\Dotnet\Level\poly\obj\Debug\netcoreapp3.1\poly.pdb
+E:\Divya Soft\Dotnet\Level\poly\obj\Debug\netcoreapp3.1\poly.genruntimeconfig.cache

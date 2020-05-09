@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Mahesh\\.nuget\\packages\\": {}
+    "C:\\Users\\dipesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
+      "projectUniqueName": "E:\\Divya Soft\\Dotnet\\Level\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
       "projectName": "Polymorphism",
-      "projectPath": "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
-      "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Polymorphism\\Polymorphism\\obj\\",
+      "projectPath": "E:\\Divya Soft\\Dotnet\\Level\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
+      "packagesPath": "C:\\Users\\dipesh\\.nuget\\packages\\",
+      "outputPath": "E:\\Divya Soft\\Dotnet\\Level\\Polymorphism\\Polymorphism\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mahesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dipesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj": {}
+    "E:\\Divya Soft\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj": {
+    "E:\\Divya Soft\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj",
+        "projectUniqueName": "E:\\Divya Soft\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj",
         "projectName": "Enums",
-        "projectPath": "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj",
-        "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahesh\\Desktop\\Dotnet\\Level\\Enums\\Enums\\obj\\",
+        "projectPath": "E:\\Divya Soft\\Dotnet\\Level\\Enums\\Enums\\Enums.csproj",
+        "packagesPath": "C:\\Users\\dipesh\\.nuget\\packages\\",
+        "outputPath": "E:\\Divya Soft\\Dotnet\\Level\\Enums\\Enums\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dipesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

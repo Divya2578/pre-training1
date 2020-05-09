@@ -1,0 +1,12 @@
+E:\Divya Soft\Dotnet\Level\Interface1\bin\Debug\netcoreapp3.1\Interface1.exe
+E:\Divya Soft\Dotnet\Level\Interface1\bin\Debug\netcoreapp3.1\Interface1.deps.json
+E:\Divya Soft\Dotnet\Level\Interface1\bin\Debug\netcoreapp3.1\Interface1.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Interface1\bin\Debug\netcoreapp3.1\Interface1.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Interface1\bin\Debug\netcoreapp3.1\Interface1.dll
+E:\Divya Soft\Dotnet\Level\Interface1\bin\Debug\netcoreapp3.1\Interface1.pdb
+E:\Divya Soft\Dotnet\Level\Interface1\obj\Debug\netcoreapp3.1\Interface1.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Interface1\obj\Debug\netcoreapp3.1\Interface1.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Interface1\obj\Debug\netcoreapp3.1\Interface1.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Interface1\obj\Debug\netcoreapp3.1\Interface1.dll
+E:\Divya Soft\Dotnet\Level\Interface1\obj\Debug\netcoreapp3.1\Interface1.pdb
+E:\Divya Soft\Dotnet\Level\Interface1\obj\Debug\netcoreapp3.1\Interface1.genruntimeconfig.cache
