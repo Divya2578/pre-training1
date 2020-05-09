@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Thread\bin\Debug\netcoreapp3.1\Thread.exe
+E:\Divya Soft\Dotnet\Level\Thread\bin\Debug\netcoreapp3.1\Thread.deps.json
+E:\Divya Soft\Dotnet\Level\Thread\bin\Debug\netcoreapp3.1\Thread.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Thread\bin\Debug\netcoreapp3.1\Thread.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Thread\bin\Debug\netcoreapp3.1\Thread.dll
+E:\Divya Soft\Dotnet\Level\Thread\bin\Debug\netcoreapp3.1\Thread.pdb
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.dll
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.pdb
+E:\Divya Soft\Dotnet\Level\Thread\obj\Debug\netcoreapp3.1\Thread.genruntimeconfig.cache
