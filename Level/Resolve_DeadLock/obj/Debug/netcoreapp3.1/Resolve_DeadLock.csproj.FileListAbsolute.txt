@@ -1,0 +1,13 @@
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\bin\Debug\netcoreapp3.1\Resolve_DeadLock.exe
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\bin\Debug\netcoreapp3.1\Resolve_DeadLock.deps.json
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\bin\Debug\netcoreapp3.1\Resolve_DeadLock.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\bin\Debug\netcoreapp3.1\Resolve_DeadLock.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\bin\Debug\netcoreapp3.1\Resolve_DeadLock.dll
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\bin\Debug\netcoreapp3.1\Resolve_DeadLock.pdb
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.csprojAssemblyReference.cache
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.dll
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.pdb
+E:\Divya Soft\Dotnet\Level\Resolve_DeadLock\obj\Debug\netcoreapp3.1\Resolve_DeadLock.genruntimeconfig.cache

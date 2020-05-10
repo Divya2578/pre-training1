@@ -1,0 +1,12 @@
+E:\Divya Soft\Dotnet\Level\Anonymous\bin\Debug\netcoreapp3.1\Anonymous.exe
+E:\Divya Soft\Dotnet\Level\Anonymous\bin\Debug\netcoreapp3.1\Anonymous.deps.json
+E:\Divya Soft\Dotnet\Level\Anonymous\bin\Debug\netcoreapp3.1\Anonymous.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Anonymous\bin\Debug\netcoreapp3.1\Anonymous.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Anonymous\bin\Debug\netcoreapp3.1\Anonymous.dll
+E:\Divya Soft\Dotnet\Level\Anonymous\bin\Debug\netcoreapp3.1\Anonymous.pdb
+E:\Divya Soft\Dotnet\Level\Anonymous\obj\Debug\netcoreapp3.1\Anonymous.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Anonymous\obj\Debug\netcoreapp3.1\Anonymous.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Anonymous\obj\Debug\netcoreapp3.1\Anonymous.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Anonymous\obj\Debug\netcoreapp3.1\Anonymous.dll
+E:\Divya Soft\Dotnet\Level\Anonymous\obj\Debug\netcoreapp3.1\Anonymous.pdb
+E:\Divya Soft\Dotnet\Level\Anonymous\obj\Debug\netcoreapp3.1\Anonymous.genruntimeconfig.cache
