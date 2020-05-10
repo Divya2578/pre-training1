@@ -1,0 +1,12 @@
+E:\Divya Soft\Dotnet\Level\Lambda\bin\Debug\netcoreapp3.1\Lambda.exe
+E:\Divya Soft\Dotnet\Level\Lambda\bin\Debug\netcoreapp3.1\Lambda.deps.json
+E:\Divya Soft\Dotnet\Level\Lambda\bin\Debug\netcoreapp3.1\Lambda.runtimeconfig.json
+E:\Divya Soft\Dotnet\Level\Lambda\bin\Debug\netcoreapp3.1\Lambda.runtimeconfig.dev.json
+E:\Divya Soft\Dotnet\Level\Lambda\bin\Debug\netcoreapp3.1\Lambda.dll
+E:\Divya Soft\Dotnet\Level\Lambda\bin\Debug\netcoreapp3.1\Lambda.pdb
+E:\Divya Soft\Dotnet\Level\Lambda\obj\Debug\netcoreapp3.1\Lambda.csproj.CoreCompileInputs.cache
+E:\Divya Soft\Dotnet\Level\Lambda\obj\Debug\netcoreapp3.1\Lambda.AssemblyInfoInputs.cache
+E:\Divya Soft\Dotnet\Level\Lambda\obj\Debug\netcoreapp3.1\Lambda.AssemblyInfo.cs
+E:\Divya Soft\Dotnet\Level\Lambda\obj\Debug\netcoreapp3.1\Lambda.dll
+E:\Divya Soft\Dotnet\Level\Lambda\obj\Debug\netcoreapp3.1\Lambda.pdb
+E:\Divya Soft\Dotnet\Level\Lambda\obj\Debug\netcoreapp3.1\Lambda.genruntimeconfig.cache
