@@ -1,0 +1,194 @@
+********PART 101*******
+---
+Select Country, Gender, Sum(Salary) as TotalSalary
+From Employees 
+Group By Country, Gender
+--
+Select Country, Gender, Sum(Salary) as TotalSalary
+From Employees 
+Group By Country, Gender
+
+UNION ALL
+
+Select Country, NULL, Sum(Salary) as TotalSalary
+From Employees 
+Group By Country
+
+UNION ALL
+
+Select NULL, Gender, Sum(Salary) as TotalSalary
+From Employees 
+Group By Gender
+
+---
+Select Country, Gender, Sum(Salary) TotalSalary
+From Employees
+Group BY
+      GROUPING SETS
+      (
+            (Country, Gender), -- Sum of Salary by Country and Gender
+            (Country),               -- Sum of Salary by Country
+            (Gender) ,               -- Sum of Salary by Gender
+            ()                             -- Grand Total
+      )
+Order By Grouping(Country), Grouping(Gender), Gender
+
+******PART 102********
+
+SELECT Country, SUM(Salary) AS TotalSalary
+FROM Employees
+
+GROUP BY ROLLUP(Country)
+
+--The above query can also be rewritten as shown below
+SELECT Country, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country WITH ROLLUP
+
+---We can also use UNION ALL operator along with GROUP BY
+SELECT Country, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country
+
+UNION ALL
+
+SELECT NULL, SUM(Salary) AS TotalSalary
+FROM Employees
+
+----We can also use Grouping Sets to achieve the same result
+SELECT Country, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY GROUPING SETS
+(
+    (Country),
+    ()
+)
+
+Using ROLLUP with GROUP BY
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY ROLLUP(Country, Gender)
+
+--OR
+
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country, Gender WITH ROLLUP
+
+--Using UNION ALL with GROUP BY
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country, Gender
+
+UNION ALL
+
+SELECT Country, NULL, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country
+
+UNION ALL
+
+SELECT NULL, NULL, SUM(Salary) AS TotalSalary
+FROM Employees
+
+---Using GROUPING SETS
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY GROUPING SETS
+(
+    (Country, Gender),
+    (Country),
+    ()
+)
+
+*******PART 103*******
+---Using Cube with Group By
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Cube(Country, Gender)
+
+--OR
+
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country, Gender with Cube
+
+---The above query is equivalent to the following Grouping Sets query
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY
+    GROUPING SETS
+    (
+         (Country, Gender),
+         (Country),
+         (Gender),
+         ()
+    )
+
+--The above query is equivalent to the following UNION ALL query. 
+
+SELECT Country, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country, Gender
+
+UNION ALL
+
+SELECT Country, NULL, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Country
+
+UNION ALL
+
+SELECT NULL, Gender, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Gender
+
+UNION ALL
+
+SELECT NULL, NULL, SUM(Salary) AS TotalSalary
+FROM Employees
+
+
+*******PART 104*******
+
+--You won't see any difference when you use ROLLUP and CUBE on a single column. 
+Both the following queries produces the same output.
+
+SELECT Continent, Sum(SaleAmount) AS TotalSales
+FROM Sales
+GROUP BY ROLLUP(Continent)
+
+-- OR
+
+SELECT Continent, SUM(SaleAmount) AS TotalSales
+FROM Sales
+GROUP BY CUBE(Continent)
+
+---CUBE generates a result set that shows aggregates for all combinations of values in the selected columns, 
+where as ROLLUP generates a result set that shows aggregates for a hierarchy of values in the selected columns
+
+*******PART 105*******
+
+What is Grouping function 
+Grouping(Column) indicates whether the column in a GROUP BY list is aggregated or not.
+Grouping returns 1 for aggregated or 0 for not aggregated in the result set. 
+
+********PART 106*******
+Difference between GROUPING and GROUPING_ID
+
+Syntax : GROUPING function is used on single column,
+ where as the column list for GROUPING_ID function must match with GROUP BY column list.
+
+GROUPING(Col1)
+GROUPING_ID(Col1, Col2, Col3,...)
+
+GROUPING indicates whether the column in a GROUP BY list is aggregated or not.
+ Grouping returns 1 for aggregated or 0 for not aggregated in the result set. 
+
+GROUPING_ID() function concatenates all the GOUPING() functions,
+ perform the binary to decimal conversion, and returns the equivalent integer. 
+In short
+GROUPING_ID(A, B, C) =  GROUPING(A) + GROUPING(B) + GROUPING(C)
+
+Use of GROUPING_ID function : 
+GROUPING_ID function is very handy if you want to sort and filter by level of grouping.
