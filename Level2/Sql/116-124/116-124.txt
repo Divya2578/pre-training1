@@ -1,0 +1,302 @@
+********PART 116*******
+---In SQL Server we have different categories of window functions
+* Aggregate functions - AVG, SUM, COUNT, MIN, MAX etc..
+* Ranking functions - RANK, DENSE_RANK, ROW_NUMBER etc..
+* Analytic functions - LEAD, LAG, FIRST_VALUE, LAST_VALUE etc...
+
+OVER Clause defines the partitioning and ordering of a rows (i.e a window) for the above functions to operate on. Hence these functions are called window functions. The OVER clause accepts the following three arguments to define a window for these functions to operate on.
+* ORDER BY : Defines the logical order of the rows
+* PARTITION BY : Divides the query result set into partitions. The window function is applied to each partition separately.
+* ROWSor RANGE clause : Further limits the rows within the partition by specifying start and end points within the partition.
+
+The default for ROWS or RANGE clause is
+RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+
+SELECT Name, Gender, Salary,
+        AVG(Salary) OVER(ORDER BY Salary) AS Average
+FROM TBLEmployee
+
+SELECT Name, Gender, Salary,
+        AVG(Salary) OVER(ORDER BY Salary ROWS BETWEEN
+        UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS Average
+FROM TBLEmployee
+
+--What is the difference between ROWS and RANGE
+We will discuss this in a later video
+
+--The following query can be used if you want to compute the average salary of 
+1. The current row
+2. One row PRECEDING the current row and 
+3. One row FOLLOWING the current row
+
+SELECT Name, Gender, Salary,
+        AVG(Salary) OVER(ORDER BY Salary
+        ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS Average
+FROM TBLEmployee
+
+**********PART 117************
+--The following query calculates the running total. We have not specified an explicit value for ROWS or RANGE clause.
+SELECT Name, Salary,
+        SUM(Salary) OVER(ORDER BY Salary) AS RunningTotal
+FROM TBLEmployee
+
+So the above query is using the default value which is
+RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+
+---This means the above query can be re-written using an explicit value for ROWS or RANGE clause as shown below.
+SELECT Name, Salary,
+        SUM(Salary) OVER(ORDER BY Salary
+        RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS RunningTotal
+FROM TBLEmployee
+
+---We can also achieve the same result, by replacing RANGE with ROWS
+SELECT Name, Salary,
+        SUM(Salary) OVER(ORDER BY Salary
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS RunningTotal
+FROM TBLEmployee
+
+--What is the difference between ROWS and RANGE
+To understand the difference we need some duplicate values for the Salary column in the Employees table.
+
+--Execute the following UPDATE script to introduce duplicate values in the Salary column
+Update TBLEmployee set Salary = 1000 where Id = 2
+Update TBLEmployee set Salary = 3000 where Id = 4
+Go
+
+--Now execute the following query. Notice that we get the running total as expected.
+SELECT Name, Salary,
+        SUM(Salary) OVER(ORDER BY Salary
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS RunningTotal
+FROM TBLEmployee
+
+--The following query uses RANGE instead of ROWS
+SELECT Name, Salary,
+        SUM(Salary) OVER(ORDER BY Salary
+        RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS RunningTotal
+FROM TBLEmployee
+
+--All together side by side. The following query shows how running total changes
+1. When no value is specified for ROWS or RANGE clause
+2. When RANGE clause is used explicitly with it's default value
+3. When ROWS clause is used instead of RANGE clause
+
+SELECT Name, Salary,
+        SUM(Salary) OVER(ORDER BY Salary) AS [Default],
+        SUM(Salary) OVER(ORDER BY Salary
+        RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS [Range],
+        SUM(Salary) OVER(ORDER BY Salary
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS [Rows]
+FROM TBLEmployee
+
+***********PART 118*********
+
+--LAST_VALUE function 
+* Introduced in SQL Server 2012
+* Retrieves the last value from the specified column
+* ORDER BY clause is required
+* PARTITION BY clause is optional
+* ROWS or RANGE clause is optional, but for it to work correctly you may have to explicitly specify a value
+
+--Syntax : LAST_VALUE(Column_Name) OVER (ORDER BY Col1, Col2, ...)
+
+--LAST_VALUE function not working as expected : 
+	In the following example, LAST_VALUE function does not return the name of the highest paid employee. 
+This is because we have not specified an explicit value for ROWS or RANGE clause. As a result it is using it's default 
+value RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW.
+
+SELECT Name, Gender, Salary,
+    LAST_VALUE(Name) OVER (ORDER BY Salary) AS LastValue
+FROM TBLEmployee
+
+--LAST_VALUE function working as expected : 
+	In the following example, LAST_VALUE function returns the name of the highest paid employee as expected.
+ Notice we have set an explicit value for ROWS or RANGE clause to ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+
+--This tells the LAST_VALUE function that it's window starts at the first row and ends at the last row in the result set.
+
+SELECT Name, Gender, Salary,
+    LAST_VALUE(Name) OVER (ORDER BY Salary ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS LastValue
+FROM TBLEmployee
+
+--LAST_VALUE function example with partitions : 
+	In the following example, LAST_VALUE function returns the name of the highest paid employee from the respective partition.
+
+SELECT Name, Gender, Salary,
+    LAST_VALUE(Name) OVER (PARTITION BY Gender ORDER BY Salary
+    ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS LastValue
+FROM Employees
+
+**********PART 119***********
+PIVOT operator turns ROWS into COLUMNS, where as UNPIVOT turns COLUMNS into ROWS.
+
+**********PART 120***********
+Is it always possible to reverse what PIVOT operator has done using UNPIVOT operator.
+No, not always. If the PIVOT operator has not aggregated the data, you can get your original data back
+ using the UNPIVOT operator but not if the data is aggregated.
+
+Now if we use UNPIVOT opertaor with the above query, we wouldn't get our orginial data back as the PIVOT 
+operator has already aggrgated the data, and there is no way for SQL Server to know how to undo the aggregations.
+
+**********PART 121***********
+
+--Choose function 
+* Introduced in SQL Server 2012
+* Returns the item at the specified index from the list of available values
+* The index position starts at 1 and NOT 0 (ZERO)
+
+--Syntax : CHOOSE( index, val_1, val_2, ... )
+
+Example : Returns the item at index position 2
+
+SELECT CHOOSE(2, 'India','US', 'UK') AS Country
+
+--Using CASE statement in SQL Server
+
+SELECT Name, DateOfBirth,
+        CASE DATEPART(MM, DateOfBirth)
+            WHEN 1 THEN 'JAN'
+            WHEN 2 THEN 'FEB'
+            WHEN 3 THEN 'MAR'
+            WHEN 4 THEN 'APR'
+            WHEN 5 THEN 'MAY'
+            WHEN 6 THEN 'JUN'
+            WHEN 7 THEN 'JUL'
+            WHEN 8 THEN 'AUG'
+            WHEN 9 THEN 'SEP'
+            WHEN 10 THEN 'OCT'
+            WHEN 11 THEN 'NOV'
+            WHEN 12 THEN 'DEC'
+        END
+       AS [MONTH]
+FROM TBLEmployee
+
+--Using CHOOSE function in SQL Server : 
+The amount of code we have to write is lot less than using CASE statement.
+
+SELECT Name, DateOfBirth,CHOOSE(DATEPART(MM, DateOfBirth),
+       'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG',
+       'SEP', 'OCT', 'NOV', 'DEC') AS [MONTH]
+FROM TBLEmployee
+
+**********PART 122***********
+--IIF function
+* Introduced in SQL Server 2012
+* Returns one of two the values, depending on whether the Boolean expression evaluates to true or false
+* IIF is a shorthand way for writing a CASE expression
+
+Syntax : IIF ( boolean_expression, true_value, false_value )
+
+Example : Returns Male as the boolean expression evaluates to TRUE
+
+DECLARE @Gender INT
+SET @Gender = 1
+SELECT IIF( @Gender = 1, 'Male', 'Femlae') AS Gender
+
+--Using CASE statement
+SELECT Name, GenderId,
+        CASE WHEN GenderId = 1
+                      THEN 'Male'
+                      ELSE 'Female'
+                   END AS Gender
+FROM TBLEmployee
+
+---Using IIF function
+SELECT Name, GenderId, IIF(GenderId = 1, 'Male', 'Female') AS Gender
+FROM TBLEmployee
+
+**********PART 123***********
+--TRY_PARSE function
+* Introduced in SQL Server 2012
+* Converts a string to Date/Time or Numeric type
+* Returns NULL if the provided string cannot be converted to the specified data type
+* Requires .NET Framework Common Language Runtime (CLR)
+
+--Syntax : TRY_PARSE ( string_value AS data_type )
+
+Example : Convert string to INT. As the string can be converted to INT, the result will be 99 as expected.
+
+SELECT TRY_PARSE('99' AS INT) AS Result
+
+Example : Convert string to INT. The string cannot be converted to INT, so TRY_PARSE returns NULL
+
+SELECT TRY_PARSE('ABC' AS INT) AS Result
+
+--Use CASE statement or IIF function to provide a meaningful error message instead of NULL
+ when the conversion fails.
+
+Example : Using CASE statement to provide a meaningful error message when the conversion fails.
+
+SELECT
+CASE WHEN TRY_PARSE('ABC' AS INT) IS NULL
+           THEN 'Conversion Failed'
+           ELSE 'Conversion Successful'
+END AS Result
+
+Example : Using IIF function to provide a meaningful error message when the conversion fails.
+
+SELECT IIF(TRY_PARSE('ABC' AS INT) IS NULL, 'Conversion Failed',
+                 'Conversion Successful') AS Result
+
+--What is the difference between PARSE and TRY_PARSE
+PARSE will result in an error if the conversion fails, where as TRY_PARSE will return NULL instead of an error. 
+
+--Since ABC cannot be converted to INT, PARSE will return an error
+SELECT PARSE('ABC' AS INT) AS Result
+
+--Since ABC cannot be converted to INT, TRY_PARSE will return NULL instead of an error
+SELECT TRY_PARSE('ABC' AS INT) AS Result
+
+SELECT Name, TRY_PARSE(Age AS INT) AS Age
+FROM tblEmployee
+
+
+
+**********PART 124***********
+
+--TRY_CONVERT function
+* Introduced in SQL Server 2012
+* Converts a value to the specified data type
+* Returns NULL if the provided value cannot be converted to the specified data type
+* If you request a conversion that is explicitly not permitted, then TRY_CONVERT fails with an error
+
+Syntax : TRY_CONVERT ( data_type, value, [style] )
+
+--Example : Convert string to INT. As the string can be converted to INT, the result will be 99 as expected.
+
+SELECT TRY_CONVERT(INT, '99') AS Result
+
+--Example : Convert string to INT. The string cannot be converted to INT, so TRY_CONVERT returns NULL
+
+SELECT TRY_CONVERT(INT, 'ABC') AS Result
+
+
+Example : Converting an integer to XML is not explicitly permitted. so in this case TRY_CONVERT fails with an error
+
+SELECT TRY_CONVERT(XML, 10) AS Result
+
+--If you want to provide a meaningful error message instead of NULL when the conversion fails, you can do so using CASE statement or IIF function.
+
+Example : Using CASE statement to provide a meaningful error message when the conversion fails.
+
+SELECT
+CASE WHEN TRY_CONVERT(INT, 'ABC') IS NULL
+           THEN 'Conversion Failed'
+           ELSE 'Conversion Successful'
+END AS Result
+
+
+Example : Using IIF function to provide a meaningful error message when the conversion fails.
+
+SELECT IIF(TRY_CONVERT(INT, 'ABC') IS NULL, 'Conversion Failed',
+                 'Conversion Successful') AS Result
+
+---What is the difference between CONVERT and TRY_CONVERT
+CONVERT will result in an error if the conversion fails, where as TRY_CONVERT will return NULL instead of an error. 
+
+--Since ABC cannot be converted to INT, CONVERT will return an error
+SELECT CONVERT(INT, 'ABC') AS Result
+
+--Since ABC cannot be converted to INT, TRY_CONVERT will return NULL instead of an error
+SELECT TRY_CONVERT(INT, 'ABC') AS Result
+
+
