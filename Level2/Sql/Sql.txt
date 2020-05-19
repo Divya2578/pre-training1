@@ -1,0 +1,105 @@
+**********PART 136************
+--What is in SQL Server
+The GUID data type is a 16 byte binary data type that is globally unique. GUID stands for Global Unique Identifier. 
+The terms GUID and UNIQUEIDENTIFIER are used interchangeably.
+
+To declare a GUID variable, we use the keyword UNIQUEIDENTIFIER
+
+Declare @ID UNIQUEIDENTIFIER
+SELECT @ID = NEWID()
+SELECT @ID as MYGUID
+
+--How to create a GUID in sql server
+To create a GUID in SQL Server use NEWID() function
+
+--For example, SELECT NEWID(), creates a GUID that is guaranteed to be unique across tables, databases, and servers. Every time you execute SELECT NEWID() query, you get a GUID that is unique.
+
+Example GUID : 0BB83607-00D7-4B2C-8695-32AD3812B6F4
+
+--When to use GUID data type : Let us understand when to use a GUID in SQL Server
+
+The main advantage of using a GUID is that it is unique across tables, databases and servers. 
+It is extremely useful if you're consolidating records from multiple SQL Servers into a single table. 
+
+The main disadvantage of using a GUID as a key is that it is 16 bytes in size. 
+It is one of the largest datatypes in SQL Server. An integer on the other hand is 4 bytes,
+
+An Index built on a GUID is larger and slower than an index built on integer column. 
+In addition a GUID is hard to read compared to int.
+
+So in summary, use a GUID when you really need a globally unique identifier. 
+In all other cases it is better to use an INT data type.
+
+**********PART 137************
+How to check if a GUID is NULL : Checking if a GUID is null is straight forward in SQL Server. 
+Just use IS NULL keywords as shown below
+
+Declare @MyGuid Uniqueidentifier
+If(@MyGuid IS NULL)
+Begin
+     Print 'Guid is null'
+End
+Else
+Begin
+     Print 'Guid is not null'
+End
+
+In the above example, since @MyGuid is just declared and not initialised, it prints the message "Guid is null"
+
+Now let's say, if a GUID variable is NULL, then we want to initialise that GUID variable with a new GUID value. If it's not NULL, then we want to retain it's value. One way to do this is by using an IF condition as shown below.
+
+Declare @MyGuid UniqueIdentifier
+
+If(@MyGuid IS NULL)
+Begin
+     Set @MyGuid = NEWID()
+End
+
+Select @MyGuid
+
+We can achieve exactly the same thing by using ISNULL() function. The advantage of using ISNULL() function is that, it reduces the amount of code we have to write.
+
+Declare @MyGuid UniqueIdentifier
+Select ISNULL(@MyGuid, NewID())
+
+-How to check if a GUID is EMPTY : Before understanding how to check if a GUID is empty, 
+let's understand what is an empty GUID. An empty GUID is a GUID with all ZEROS as shown below.
+00000000-0000-0000-0000-000000000000
+
+-How to create this empty GUID. Do we have to type all the ZERO's and Hyphens. 
+The answe is NO. We do not have to type them manually. Instead use one of the following 
+SELECT query's to create an empty GUID. I prefer to use the second SELECT statement as it has only one CAST
+
+SELECT CAST(CAST(0 AS BINARY) AS UNIQUEIDENTIFIER)
+OR
+SELECT CAST(0x0 AS UNIQUEIDENTIFIER)
+
+To check if a GUID is an empty GUID, you have 2 options
+---Option 1: You can compare it to an Empty GUID value as shown below
+
+Declare @MyGuid UniqueIdentifier
+Set @MyGuid = '00000000-0000-0000-0000-000000000000'
+
+If(@MyGuid = '00000000-0000-0000-0000-000000000000')
+Begin
+     Print 'Guid is Empty'
+End
+Else
+Begin
+     Print 'Guid is not Empty'
+End
+
+---Option 2: You can also compare it to a return value of the CAST method
+
+Declare @MyGuid UniqueIdentifier
+Set @MyGuid = '00000000-0000-0000-0000-000000000000'
+
+If(@MyGuid = Cast(0x0 as Uniqueidentifier))
+Begin
+     Print 'Guid is Empty'
+End
+Else
+Begin
+     Print 'Guid is not Empty'
+End
+
