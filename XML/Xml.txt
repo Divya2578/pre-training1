@@ -1,0 +1,219 @@
+--Introduction to XML
+XML is a software- and hardware-independent tool for storing and transporting data.
+
+--What is XML?
+* XML stands for eXtensible Markup Language
+* XML is a markup language much like HTML
+* XML was designed to store and transport data
+* XML was designed to be self-descriptive
+
+--The XML above is quite self-descriptive:
+* It has sender information.
+* It has receiver information
+* It has a heading
+* It has a message body.
+
+--The Difference Between XML and HTML
+XML and HTML were designed with different goals:
+
+* XML was designed to carry data - with focus on what data is
+* HTML was designed to display data - with focus on how data looks
+* XML tags are not predefined like HTML tags are
+
+--XML Does Not Use Predefined Tags
+The XML language has no predefined tags.
+
+The tags in the example above (like <to> and <from>) are not defined in any XML standard. These tags are "invented" by the author of the XML document.
+
+HTML works with predefined tags like <p>, <h1>, <table>, etc.
+
+With XML, the author must define both the tags and the document structure.
+
+--XML is Extensible
+Most XML applications will work as expected even if new data is added (or removed).
+
+Imagine an application designed to display the original version of note.xml (<to> <from> <heading> <body>).
+
+Then imagine a newer version of note.xml with added <date> and <hour> elements, and a removed <heading>.
+
+---XML Simplifies Things
+* It simplifies data sharing
+* It simplifies data transport
+* It simplifies platform changes
+* It simplifies data availability
+Many computer systems contain data in incompatible formats. Exchanging data between incompatible systems (or upgraded systems) is a time-consuming task for web developers. Large amounts of data must be converted, and incompatible data is often lost.
+
+XML stores data in plain text format. This provides a software- and hardware-independent way of storing, transporting, and sharing data.
+
+XML also makes it easier to expand or upgrade to new operating systems, new applications, or new browsers, without losing data.
+
+With XML, data can be available to all kinds of "reading machines" like people, computers, voice machines, news feeds, etc.
+
+XML is used in many aspects of web development.
+
+XML is often used to separate data from presentation.
+
+---XML Separates Data from Presentation
+XML does not carry any information about how to be displayed.
+
+The same XML data can be used in many different presentation scenarios.
+
+Because of this, with XML, there is a full separation between data and presentation.
+
+---XML is Often a Complement to HTML
+In many HTML applications, XML is used to store or transport data, while HTML is used to format and display the same data.
+
+---XML Separates Data from HTML
+When displaying data in HTML, you should not have to edit the HTML file when the data changes.
+
+With XML, the data can be stored in separate XML files.
+
+---XML Tree Structure
+XML documents are formed as element trees.
+
+An XML tree starts at a root element and branches from the root to child elements.
+
+All elements can have sub elements (child elements):
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
+
+--Self-Describing Syntax
+XML uses a much self-describing syntax.
+
+A prolog defines the XML version and the character encoding:
+<?xml version="1.0" encoding="UTF-8"?>
+
+UTF-8 is the default character encoding for XML documents.
+UTF-8 is also the default encoding for HTML5, CSS, JavaScript, PHP, and SQL.
+
+--Note: The XML prolog does not have a closing tag! This is not an error. The prolog is not a part of the XML document.
+
+--XML Tags are Case Sensitive
+XML tags are case sensitive. The tag <Letter> is different from the tag <letter>.
+
+--Entity References
+Some characters have a special meaning in XML.
+
+If you place a character like "<" inside an XML element, it will generate an error because the parser interprets it as the start of a new element.
+
+This will generate an XML error:
+<message>salary < 1000</message>
+
+To avoid this error, replace the "<" character with an entity reference:
+<message>salary &lt; 1000</message>
+
+--There are 5 pre-defined entity references in XML:
+&lt;	<	less than
+&gt;	>	greater than
+&amp;	&	ampersand 
+&apos;	'	apostrophe
+&quot;	"	quotation mark
+
+Only < and & are strictly illegal in XML, but it is a good habit to replace > with &gt; as well.
+
+--Comments in XML
+The syntax for writing comments in XML is similar to that of HTML:
+<!-- This is a comment -->
+
+Two dashes in the middle of a comment are not allowed:
+<!-- This is an invalid -- comment -->
+
+--White-space is Preserved in XML
+XML does not truncate multiple white-spaces (HTML truncates multiple white-spaces to one single white-space):
+
+XML:	Hello           Tove
+HTML:	Hello Tove
+
+--XML Stores New Line as LF
+* Windows applications store a new line as: carriage return and line feed (CR+LF).
+* Unix and Mac OSX use LF.
+* Old Mac systems use CR.
+* XML stores a new line as LF.
+
+--XML Naming Rules
+XML elements must follow these naming rules:
+* Element names are case-sensitive
+* Element names must start with a letter or underscore
+* Element names cannot start with the letters xml (or XML, or Xml, etc)
+* Element names can contain letters, digits, hyphens, underscores, and periods
+* Element names cannot contain spaces
+Any name can be used, no words are reserved (except xml).
+
+---XML Attributes
+XML elements can have attributes, just like HTML.
+Attributes are designed to contain data related to a specific element.
+
+---XML Attributes for Metadata
+Sometimes ID references are assigned to elements. These IDs can be used to identify XML elements in much the same way as the id attribute in HTML.
+
+<messages>
+  <note id="501">
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+  </note>
+  <note id="502">
+    <to>Jani</to>
+    <from>Tove</from>
+    <heading>Re: Reminder</heading>
+    <body>I will not</body>
+  </note>
+</messages>
+
+The id attributes above are for identifying the different notes. It is not a part of the note itself.
+
+---XML Namespaces
+XML Namespaces provide a method to avoid element name conflicts.
+
+--Name Conflicts
+In XML, element names are defined by the developer. This often results in a conflict when trying to mix XML documents from different XML applications.
+
+This XML carries HTML table information:
+
+<table>
+  <tr>
+    <td>Apples</td>
+    <td>Bananas</td>
+  </tr>
+</table>
+
+--Uniform Resource Identifier (URI)
+A Uniform Resource Identifier (URI) is a string of characters which identifies an Internet Resource.
+
+The most common URI is the Uniform Resource Locator (URL) which identifies an Internet domain address. Another, not so common type of URI is the Uniform Resource Name (URN).
+
+--Namespaces in Real Use
+XSLT is a language that can be used to transform XML documents into other formats.
+The XML document below, is a document used to transform XML into HTML.
+The namespace "http://www.w3.org/1999/XSL/Transform" identifies XSLT elements inside an HTML document:
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+<html>
+<body>
+  <h2>My CD Collection</h2>
+  <table border="1">
+    <tr>
+      <th style="text-align:left">Title</th>
+      <th style="text-align:left">Artist</th>
+    </tr>
+    <xsl:for-each select="catalog/cd">
+    <tr>
+      <td><xsl:value-of select="title"/></td>
+      <td><xsl:value-of select="artist"/></td>
+    </tr>
+    </xsl:for-each>
+  </table>
+</body>
+</html>
+</xsl:template>
+
+</xsl:stylesheet>
+
