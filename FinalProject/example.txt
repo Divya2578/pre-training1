@@ -1,0 +1,7 @@
+Video-sharing app Mitron, which has recently been gaining steam as the rival to the popular Chinese app TikTok, is not really 'made in India', according to a report by News18.
+
+The Mitron app had garnered a lot of attention amid the growing clamour for 'Make-in-India' and 'vocal for local'. However, the report says that the app was never really made by an IIT student in the country. Instead, its entire source code, including its features and user interface, was bought from Qboxus, a Pakistani software developer company.
+
+The founder of Qboxus, Irfan Sheikh, told News18 that the company had sold the source code to promoters of the Mitron app for around Rs 2,600. He added that while Qboxus expects customers to use the code and build their own product, Mitron’s developers have taken our exact product, changed the logo and uploaded it on their store.
+
+It had earlier been reported that the Mitron App, which has clocked over 5 million downloads on Google Play Store, was developed by a student of IIT Roorkee and that it works exactly like its Chinese rival TikTok.
